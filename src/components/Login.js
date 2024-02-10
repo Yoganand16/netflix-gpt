@@ -19,11 +19,20 @@ const Login = () => {
       </div>
       <form className=" w-3/12 absolute p-12 bg-black my-44 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80">
         <h1 className="font-bold text-3xl py-4"> {isSignInForm  ? "Sign In" : "Sign Up"} </h1>
-        {!isSignInForm && <input
+        {!isSignInForm && 
+        <>
+        <input
           type="text"
-          placeholder="Your Name"
+          placeholder="First Name"
           className="p-4 my-4 w-full bg-gray-700"
-        />}
+        />
+        <input
+          type="text"
+          placeholder="Last Name"
+          className="p-4 my-4 w-full bg-gray-700"
+        />
+        </>
+        }
         
         <input
           type="text"
